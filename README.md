@@ -1,14 +1,17 @@
+# VibeNest deployment candidate
+The VibeNest adaptation is **awaiting runtime and Free-tier acceptance**. See the [guided setup and Deploy button](vibenest/README.md). No working demo or published catalog template is claimed.
+
 <p align="center"><img src="docs/logo.png"></p>
 <h1 align="center">Glance</h1>
 <p align="center">
-  <a href="#installation">Install</a> •
-  <a href="docs/configuration.md#configuring-glance">Configuration</a> •
-  <a href="https://discord.com/invite/7KQ7Xa9kJd">Discord</a> •
+  <a href="#installation">Install</a> вЂў
+  <a href="docs/configuration.md#configuring-glance">Configuration</a> вЂў
+  <a href="https://discord.com/invite/7KQ7Xa9kJd">Discord</a> вЂў
   <a href="https://github.com/sponsors/glanceapp">Sponsor</a>
 </p>
 <p align="center">
-  <a href="https://github.com/glanceapp/community-widgets">Community widgets</a> •
-  <a href="docs/preconfigured-pages.md">Preconfigured pages</a> •
+  <a href="https://github.com/glanceapp/community-widgets">Community widgets</a> вЂў
+  <a href="docs/preconfigured-pages.md">Preconfigured pages</a> вЂў
   <a href="docs/themes.md">Themes</a>
 </p>
 

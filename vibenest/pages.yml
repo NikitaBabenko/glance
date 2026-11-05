@@ -1,0 +1,21 @@
+- name: My feeds
+  columns:
+    - size: small
+      widgets:
+        - type: bookmarks
+          groups:
+            - title: My links
+              links:
+                - title: My bookmark
+                  url: '${GLANCE_BOOKMARK_URL}'
+                - title: Glance documentation
+                  url: https://github.com/glanceapp/glance/blob/main/docs/configuration.md
+    - size: full
+      widgets:
+        - type: rss
+          title: My feed
+          limit: 15
+          cache: 1h
+          feeds:
+            - url: '${GLANCE_RSS_URL}'
+              title: Selected feed

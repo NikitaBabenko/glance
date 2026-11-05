@@ -1,0 +1,23 @@
+server:
+  host: 0.0.0.0
+  port: 8080
+  proxied: true
+  assets-path: /app/data/assets
+
+auth:
+  secret-key: '${GLANCE_SECRET_KEY}'
+  users:
+    owner:
+      password-hash: '${GLANCE_PASSWORD_HASH}'
+
+document:
+  head: |
+    <meta name="robots" content="noindex, nofollow">
+
+branding:
+  custom-footer: |
+    <a href="https://github.com/glanceapp/glance">Glance</a> ·
+    <a href="https://github.com/NikitaBabenko/glance/tree/vibenest">Source code and VibeNest adaptation (AGPL-3.0)</a>
+
+pages:
+  $include: /app/data/pages.yml
