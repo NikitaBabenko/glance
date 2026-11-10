@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "compiledSource": {
+    "repository": "https://github.com/NikitaBabenko/glance",
+    "commit": "fffc32ab7e778cc376dcd81a92f091da6ca40306",
+    "tree": "a5a27406dbd643d60c7971941feee18d5cfe5de0",
+    "upstreamRepository": "https://github.com/glanceapp/glance",
+    "upstreamBase": "97b17de3be4ccc9e6b768a702ee31491fd94e7cd",
+    "cleanBeforeAndAfter": true
+  },
+  "artifact": {
+    "path": "vibenest/bin/glance-linux-amd64",
+    "sha256": "7aa1d7cabf169b32063073c082ca517bd11ec6aa6d553e32287b76798e1b32d8",
+    "bytes": 15806624,
+    "format": "static ELF64 Linux/amd64",
+    "go": "go1.27.3",
+    "vcsRevision": "fffc32ab7e778cc376dcd81a92f091da6ca40306",
+    "vcsModified": false,
+    "executedDuringVerification": false
+  },
+  "build": {
+    "command": [
+      "go",
+      "build",
+      "-mod=readonly",
+      "-p=1",
+      "-trimpath",
+      "-buildvcs=true",
+      "-ldflags=-s -w",
+      "-o",
+      "<output>/glance-linux-amd64",
+      "."
+    ],
+    "workingDirectory": "clean checkout of compiledSource.commit",
+    "environment": {
+      "CGO_ENABLED": "0",
+      "GOOS": "linux",
+      "GOARCH": "amd64",
+      "GOAMD64": "v1",
+      "GOTOOLCHAIN": "local",
+      "GOENV": "off",
+      "GOWORK": "off",
+      "GOMAXPROCS": "1",
+      "GOMEMLIMIT": "768MiB",
+      "GOPROXY": "https://proxy.golang.org",
+      "GOSUMDB": "sum.golang.org",
+      "GOFLAGS": "-mod=readonly",
+      "GOCACHE": "<task-cache>/build",
+      "GOMODCACHE": "<task-cache>/modules",
+      "GOPATH": "<task-cache>/gopath",
+      "GOTMPDIR": "<task-cache>/tmp"
+    },
+    "toolchainArchive": {
+      "filename": "go1.27.3.windows-amd64.zip",
+      "sha256": "f26081f438319757f8a1b46d7d0b2c5ec7583d4038e485e0aa725cfde7885fff",
+      "url": "https://go.dev/dl/go1.27.3.windows-amd64.zip"
+    }
+  },
+  "baseImage": {
+    "repository": "docker.io/library/alpine",
+    "tag": "3.24.4",
+    "linuxAmd64ManifestDigest": "sha256:0f49f331d9212aff11b932863be4eb01cdf962969aa86dab7d1ee21ac6f5f52b",
+    "tagIndexDigest": "sha256:f59abe656b692d901e184be3445e084786602108599d2a51d229c0f5a48c71bf",
+    "configDigest": "sha256:3ea06e4cb95e726ea6c6cc4377570ac4c4050d78710004cbd631ca809daf7e8e",
+    "officialSourceCommit": "0c9af76133a2dd9a31dedf3600e423087b29a879",
+    "shell": "/bin/sh",
+    "caBundle": {
+      "path": "/etc/ssl/certs/ca-certificates.crt",
+      "sha256": "5961c0a3c65459931c023e0075c09733f09aea4ca439cb85bc4a08bb4f3f568b",
+      "bytes": 178791,
+      "certificates": 118
+    }
+  },
+  "sourceDistribution": {
+    "license": "AGPL-3.0",
+    "licensePath": "LICENSE",
+    "licenseSha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75",
+    "sourceUrl": "https://github.com/NikitaBabenko/glance/tree/fffc32ab7e778cc376dcd81a92f091da6ca40306",
+    "preservation": "All original tracked source and notices remain at their paths; the original root Dockerfile is preserved byte-for-byte at vibenest/source-build/Dockerfile. Only packaging metadata and deployment documentation change.",
+    "alternativeSourceDockerfile": "vibenest/source-build/Dockerfile"
+  },
+  "identityBoundaries": {
+    "compiledSourceCommit": "compiledSource.commit",
+    "packagingCommitAndTree": "Resolve the Git commit and tree containing this provenance file; they differ from the compiled source commit.",
+    "baseImageDigest": "baseImage.linuxAmd64ManifestDigest",
+    "servingImageIdentity": null
+  },
+  "acceptance": {
+    "imageBuilt": false,
+    "runtimeVerified": false,
+    "freeTierVerified": false,
+    "buttonLoginDeployVerified": false,
+    "persistenceVerified": false
+  }
+}

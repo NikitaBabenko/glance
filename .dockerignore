@@ -11,3 +11,6 @@
 !main.go
 !/vibenest/
 !LICENSE
+# Verified artifact; corresponding source remains in this repository and context.
+!/vibenest/bin/
+!/vibenest/bin/glance-linux-amd64
